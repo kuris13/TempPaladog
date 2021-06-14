@@ -1,0 +1,1097 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1052; Version 2009; 64bit' Language: 'ko' Physical Memory: 16264 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/SGA/Desktop/Pala/SecondProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53250
+Successfully changed project path to: C:/Users/SGA/Desktop/Pala/SecondProject
+C:/Users/SGA/Desktop/Pala/SecondProject
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 78.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/SGA/Desktop/Pala/SecondProject/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 630 (ID=0x5912)
+    Vendor:   
+    VRAM:     8132 MB
+    Driver:   27.20.100.8682
+Initialize mono
+Mono path[0] = 'C:/Program Files/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002197 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 68.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.206 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005669 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 68.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.307 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2117 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.5 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2553.
+Total: 2.664100 ms (FindLiveObjects: 0.192900 ms CreateObjectMapping: 0.077500 ms MarkObjects: 2.227600 ms  DeleteObjects: 0.165000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/2D Platformer Tileset/Sprites/Animations/Lever/lever_07.png
+  artifactKey: Guid(064de19afc00e7c4abf3a445ac2bb81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Platformer Tileset/Sprites/Animations/Lever/lever_07.png using Guid(064de19afc00e7c4abf3a445ac2bb81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912011a8f4d65f64fc2ab2f9dcaeef8a') in 0.179298 seconds
+  Import took 0.183094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/2D Platformer Tileset/Sprites/Animations/Lever/lever_06.png
+  artifactKey: Guid(c34559ef47f98ae4eb52e6a64cae4247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Platformer Tileset/Sprites/Animations/Lever/lever_06.png using Guid(c34559ef47f98ae4eb52e6a64cae4247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351542c027237c69e000fb6af41514ae') in 0.023715 seconds
+  Import took 0.028301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.548347 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Guild/list_bg.png
+  artifactKey: Guid(7ea08a6de117d4e1681166572502e9c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Guild/list_bg.png using Guid(7ea08a6de117d4e1681166572502e9c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aedec83aed51e462f1f59d347726e57d') in 0.025601 seconds
+  Import took 0.030689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1042.724710 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_arrow.png
+  artifactKey: Guid(df3348d2fa5a44f2da5dea047a7efc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_arrow.png using Guid(df3348d2fa5a44f2da5dea047a7efc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f49e3cf74aad570fcf034984ce6b5c') in 0.029797 seconds
+  Import took 0.035810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_ticket.png
+  artifactKey: Guid(7c38c7d15aadb4e56bbb037a9285528f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_ticket.png using Guid(7c38c7d15aadb4e56bbb037a9285528f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94bcbc9db47153f4c36afe584aadc60c') in 0.037956 seconds
+  Import took 0.041410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_focus_line.png
+  artifactKey: Guid(98b8f3607047f498fb874a9ca76c1718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_focus_line.png using Guid(98b8f3607047f498fb874a9ca76c1718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29aa6c28f7abf716f13efbb5c53bc838') in 0.038942 seconds
+  Import took 0.042741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_gem.png
+  artifactKey: Guid(2396a10008e8a4e3b82d1c1ff2550071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_gem.png using Guid(2396a10008e8a4e3b82d1c1ff2550071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb1c81ced03e1f9ff8171fde4fb0c46') in 0.030936 seconds
+  Import took 0.035040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_back.png
+  artifactKey: Guid(09840eb250de44abe9fff6f1b437f925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_back.png using Guid(09840eb250de44abe9fff6f1b437f925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72cec38904ce58c0a37f6a2611b6373') in 0.031095 seconds
+  Import took 0.034862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_key_bronze.png
+  artifactKey: Guid(3120e1e16db2e49bf9d46c26d5afec7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_key_bronze.png using Guid(3120e1e16db2e49bf9d46c26d5afec7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e71eb004f80ced2281f2823dc3f1f1d8') in 0.031248 seconds
+  Import took 0.035188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_key_silver.png
+  artifactKey: Guid(19e3c39ec447d4d0aa7c5afd811c84d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_key_silver.png using Guid(19e3c39ec447d4d0aa7c5afd811c84d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f85d8106fc1202c8bc8863bf9129375') in 0.035037 seconds
+  Import took 0.038631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_gold.png
+  artifactKey: Guid(34eca069755cb482d942b23dea41ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_gold.png using Guid(34eca069755cb482d942b23dea41ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63846fd68946e0cf86f5374c249a4b17') in 0.030416 seconds
+  Import took 0.033840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_focus_bg.png
+  artifactKey: Guid(804548f70ec1745f1bf08d7ef7b6115b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_focus_bg.png using Guid(804548f70ec1745f1bf08d7ef7b6115b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef57b2edda8d8358e9e8e9dd3e0ad81') in 0.032189 seconds
+  Import took 0.035718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_circle.png
+  artifactKey: Guid(1cce6b725575d4e9985582bdf4631ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_circle.png using Guid(1cce6b725575d4e9985582bdf4631ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f45c5e434b40c509b0b04112438debb') in 0.029265 seconds
+  Import took 0.032957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_btn_spin.png
+  artifactKey: Guid(86bfd05e9420e44b88cd4091106c5801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_btn_spin.png using Guid(86bfd05e9420e44b88cd4091106c5801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b9a4fae9d746b2eb69f0a828b4f91a') in 0.026161 seconds
+  Import took 0.030118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_gift.png
+  artifactKey: Guid(1e107667df25b4c4aa54ffe645f6fceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_icon_gift.png using Guid(1e107667df25b4c4aa54ffe645f6fceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d41c29faaff19b5d7ef95215dd9c1e') in 0.028076 seconds
+  Import took 0.031764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_illust_bg.png
+  artifactKey: Guid(5003cb5fd71d64023a0d61e1534f56c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_illust_bg.png using Guid(5003cb5fd71d64023a0d61e1534f56c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e286f776050b823d47291615b7590396') in 0.030718 seconds
+  Import took 0.034210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_frame_back_line.png
+  artifactKey: Guid(586d640ef220a42399699efce01595b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_frame_back_line.png using Guid(586d640ef220a42399699efce01595b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a474d2c38a365b2cf9741f1650192697') in 0.038950 seconds
+  Import took 0.042460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_bg.png
+  artifactKey: Guid(fd6a8db56773045d3b7c40f63709a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_bg.png using Guid(fd6a8db56773045d3b7c40f63709a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1cb929a530f9b671128925d13205bb1') in 0.065517 seconds
+  Import took 0.069547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_glow.png
+  artifactKey: Guid(2f457c6c133a045fe813dfee2045501b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_glow.png using Guid(2f457c6c133a045fe813dfee2045501b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45bd5963bfef49c293ebab19a822f13') in 0.033561 seconds
+  Import took 0.037862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_one.png
+  artifactKey: Guid(892ca8f0e4fec49c799d994a8b4147f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_one.png using Guid(892ca8f0e4fec49c799d994a8b4147f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78656c3fbd5a39a3bb579cd5e92995f') in 0.029037 seconds
+  Import took 0.032743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005524 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_one.png
+  artifactKey: Guid(892ca8f0e4fec49c799d994a8b4147f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Roulette/roulette_one.png using Guid(892ca8f0e4fec49c799d994a8b4147f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78656c3fbd5a39a3bb579cd5e92995f') in 0.014129 seconds
+  Import took 0.018459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 179.362421 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Prefabs/Heros
+  artifactKey: Guid(c25d51d834b024b04b59ba9382392b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Prefabs/Heros using Guid(c25d51d834b024b04b59ba9382392b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6314ab68e5f9a1a51edd7bab902f80c6') in 0.008257 seconds
+  Import took 0.013763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.628444 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Prefabs/Common/Loading/Loading_Rotate.prefab
+  artifactKey: Guid(15a12565d655440fc9fd860644178a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Prefabs/Common/Loading/Loading_Rotate.prefab using Guid(15a12565d655440fc9fd860644178a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af72ed65f2ced8606de8bb19bb89f18f') in 0.029211 seconds
+  Import took 0.032835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.097492 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular SDF.asset
+  artifactKey: Guid(d70f485aa27dc43f79a8fd168f58435c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular SDF.asset using Guid(d70f485aa27dc43f79a8fd168f58435c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119d657da36583d9ad439e494930e289') in 0.075072 seconds
+  Import took 0.079844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 40 SDF Atlas.png
+  artifactKey: Guid(3db6a3e18d05249baab36487416ff1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 40 SDF Atlas.png using Guid(3db6a3e18d05249baab36487416ff1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c8ff7fa8bf6823f09b695f2119bd13') in 0.033500 seconds
+  Import took 0.037332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 64 SDF Atlas.png
+  artifactKey: Guid(ac08b9ec7e5394821b1ce9915760a098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 64 SDF Atlas.png using Guid(ac08b9ec7e5394821b1ce9915760a098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e336e09bda1ad364475941f833ca0f') in 0.049718 seconds
+  Import took 0.053375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 72 SDF Atlas.png
+  artifactKey: Guid(a2317bed91fc9498383c8fa5e80703b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 72 SDF Atlas.png using Guid(a2317bed91fc9498383c8fa5e80703b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc519553fef422f54aeea09903000ba') in 0.046542 seconds
+  Import took 0.049943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 32 SDF.asset
+  artifactKey: Guid(943740ed2ff034fc48ce7c5125f00570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 32 SDF.asset using Guid(943740ed2ff034fc48ce7c5125f00570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0e1c3ede0f72b1b936eff55a9cf6f8') in 0.054776 seconds
+  Import took 0.058253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 210 SDF Atlas.png
+  artifactKey: Guid(f3025eed11f684154ac66440579f94b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 210 SDF Atlas.png using Guid(f3025eed11f684154ac66440579f94b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ba04b77a00983a3de013f30bb836e7') in 0.042624 seconds
+  Import took 0.045967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 50 SDF Atlas.png
+  artifactKey: Guid(d54eec25a71514fa3acb45f91d915bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 50 SDF Atlas.png using Guid(d54eec25a71514fa3acb45f91d915bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2626062f5a67e953c44a3ff58f5aac') in 0.031325 seconds
+  Import took 0.034809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 50 SDF.asset
+  artifactKey: Guid(dd883a248fced426693e05d482ebc9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 50 SDF.asset using Guid(dd883a248fced426693e05d482ebc9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0c06eb965c3275feb6f3529387c3a2') in 0.046861 seconds
+  Import took 0.050655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 210 SDF.asset
+  artifactKey: Guid(18e5ede33e490485d9576cb16d82ad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 210 SDF.asset using Guid(18e5ede33e490485d9576cb16d82ad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4016cf3801c8174820998802b76f0923') in 0.157664 seconds
+  Import took 0.161080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/PlayGold.asset
+  artifactKey: Guid(2cdc547c1c0a94fed8b8a07e15f70168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/PlayGold.asset using Guid(2cdc547c1c0a94fed8b8a07e15f70168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea40193b6643458fcfddc9f136bddda') in 0.021864 seconds
+  Import took 0.025245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 54 SDF.asset
+  artifactKey: Guid(40521200895724bf688c4a63c2f5ade0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 54 SDF.asset using Guid(40521200895724bf688c4a63c2f5ade0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8fba3d38a3b5c270a664830e7c63f95') in 0.050276 seconds
+  Import took 0.053643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 54 SDF Atlas.png
+  artifactKey: Guid(7574acb32e4e74ef981d47f6e2d96b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 54 SDF Atlas.png using Guid(7574acb32e4e74ef981d47f6e2d96b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee62783b221cedcb37ce5e6e3b974e1') in 0.026684 seconds
+  Import took 0.029999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 28 SDF.asset
+  artifactKey: Guid(27f54c9130c9748c9be53df11fa03382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 28 SDF.asset using Guid(27f54c9130c9748c9be53df11fa03382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28637b7de756b35a852692c959c7cb96') in 0.049021 seconds
+  Import took 0.052465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 40 SDF.asset
+  artifactKey: Guid(23616b1d3aa4e449dae482e465a926a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 40 SDF.asset using Guid(23616b1d3aa4e449dae482e465a926a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc567a0172aaa6853731a17c74303ce9') in 0.053142 seconds
+  Import took 0.057064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 28 SDF Atlas.png
+  artifactKey: Guid(e5bbe2cc2c3b84ebba47ff7af7edc09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 28 SDF Atlas.png using Guid(e5bbe2cc2c3b84ebba47ff7af7edc09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03da534dcc143c2b723d823fbd9c9037') in 0.036677 seconds
+  Import took 0.040861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/JosefinSans-Bold SDF.asset
+  artifactKey: Guid(3015d2c5ebbad4fbc944c8238764609f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/JosefinSans-Bold SDF.asset using Guid(3015d2c5ebbad4fbc944c8238764609f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cfc5e4b3ab545a7d9fe39a47dc1b05') in 0.029185 seconds
+  Import took 0.032848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 32 SDF Atlas.png
+  artifactKey: Guid(883e18eec575e4397badc8155eaf05d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 32 SDF Atlas.png using Guid(883e18eec575e4397badc8155eaf05d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447301618a25f7124eab27850bf23787') in 0.030858 seconds
+  Import took 0.034792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 64 SDF.asset
+  artifactKey: Guid(bbf71d8a58305463e9d91aeaca31eaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 64 SDF.asset using Guid(bbf71d8a58305463e9d91aeaca31eaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1096c06f9a80fa25747af515d8a74577') in 0.071256 seconds
+  Import took 0.074633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 72 SDF.asset
+  artifactKey: Guid(d67edce7cf9164e1293042f9d9da494d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 72 SDF.asset using Guid(d67edce7cf9164e1293042f9d9da494d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffb743dee110f9dc67ddebf2ed11c4e') in 0.074284 seconds
+  Import took 0.077547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 120 SDF.asset
+  artifactKey: Guid(0b51dbee9f2f047cebc9e85675fb05d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 120 SDF.asset using Guid(0b51dbee9f2f047cebc9e85675fb05d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d09817035f2784b6098d984a7fac7fb') in 0.160966 seconds
+  Import took 0.164848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/PlayCombo Atlas.png
+  artifactKey: Guid(8a839e976604c4b6aac54921c27ae251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/PlayCombo Atlas.png using Guid(8a839e976604c4b6aac54921c27ae251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218103e529c2cada6214221d47d5e8b3') in 0.039955 seconds
+  Import took 0.043593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/PlayCombo.asset
+  artifactKey: Guid(ca06ef1aedbcd43fa85fdf3c7c3a4daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/PlayCombo.asset using Guid(ca06ef1aedbcd43fa85fdf3c7c3a4daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68eefffea86246c1f1a415049cde21d2') in 0.034007 seconds
+  Import took 0.037676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/PlayGold Atlas.png
+  artifactKey: Guid(0d2319da12a0c4e6fa6a98fb3c6c19e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/PlayGold Atlas.png using Guid(0d2319da12a0c4e6fa6a98fb3c6c19e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ed04f9c9ccfaeb6142c6b65a598900') in 0.022320 seconds
+  Import took 0.025863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 120 SDF Atlas.png
+  artifactKey: Guid(775401d4d0e7144ceacf275cb4d1316f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Font/Alata-Regular-Outline 120 SDF Atlas.png using Guid(775401d4d0e7144ceacf275cb4d1316f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb064d8df6e090355ce2ba76e862e9eb') in 0.066885 seconds
+  Import took 0.071425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 167.898493 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Title/title_btn_white.png
+  artifactKey: Guid(215d9dff07115427c805c2bc477a4e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Title/title_btn_white.png using Guid(215d9dff07115427c805c2bc477a4e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5bf051bd45507ffbd09d9f18d2c622') in 0.017836 seconds
+  Import took 0.022147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 289.918564 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Equipment/btn_gold_info.png
+  artifactKey: Guid(db26ab473e72644c28cab4a0862b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Equipment/btn_gold_info.png using Guid(db26ab473e72644c28cab4a0862b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2abc0a11f0b6fca6de8bed0c1a4332') in 0.015083 seconds
+  Import took 0.019550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.953917 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Equipment/btn_gold_info.png
+  artifactKey: Guid(db26ab473e72644c28cab4a0862b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Equipment/btn_gold_info.png using Guid(db26ab473e72644c28cab4a0862b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4207113367d483c5ffb370bd7df94c85') in 0.020646 seconds
+  Import took 0.033500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.795479 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Equipment/btn_gold_info.png
+  artifactKey: Guid(db26ab473e72644c28cab4a0862b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Equipment/btn_gold_info.png using Guid(db26ab473e72644c28cab4a0862b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b973ea5ed74a5c9057cf4d1ed47e45f') in 0.010681 seconds
+  Import took 0.015287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006470 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/Equipment/btn_gold_info.png
+  artifactKey: Guid(db26ab473e72644c28cab4a0862b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/Equipment/btn_gold_info.png using Guid(db26ab473e72644c28cab4a0862b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b973ea5ed74a5c9057cf4d1ed47e45f') in 0.011665 seconds
+  Import took 0.016541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 609.552276 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/BattlePass/pass_reward_bg_dim.png
+  artifactKey: Guid(9d3b67463bf7f4935a3aa15d2fe8453c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/BattlePass/pass_reward_bg_dim.png using Guid(9d3b67463bf7f4935a3aa15d2fe8453c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7266fd8616b355e2b95208d5607e1bc1') in 0.020433 seconds
+  Import took 0.025927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1200.408469 seconds.
+  path: Assets/Assets/UI_Defalut.mat
+  artifactKey: Guid(52d8fa00fda032b4abe86ad811cf509f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/UI_Defalut.mat using Guid(52d8fa00fda032b4abe86ad811cf509f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ca1828a4f5070945e84a022f812e45') in 0.263178 seconds
+  Import took 0.267740 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006946 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.502 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.7 MB.
+System memory in use after: 100.7 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2637.
+Total: 4.166600 ms (FindLiveObjects: 0.340400 ms CreateObjectMapping: 0.204100 ms MarkObjects: 3.428700 ms  DeleteObjects: 0.191000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006746 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.711 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.8 MB.
+System memory in use after: 100.8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2641.
+Total: 2.125200 ms (FindLiveObjects: 0.201400 ms CreateObjectMapping: 0.086100 ms MarkObjects: 1.737300 ms  DeleteObjects: 0.099700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005432 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.514 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.6 MB.
+System memory in use after: 100.6 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2645.
+Total: 4.439200 ms (FindLiveObjects: 0.228100 ms CreateObjectMapping: 0.100300 ms MarkObjects: 3.454400 ms  DeleteObjects: 0.653700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005095 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.057 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.8 MB.
+System memory in use after: 100.8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2649.
+Total: 2.262700 ms (FindLiveObjects: 0.175300 ms CreateObjectMapping: 0.071800 ms MarkObjects: 1.861200 ms  DeleteObjects: 0.153600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1655.177319 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_Common.spriteatlas
+  artifactKey: Guid(7d24a8ce175df4f1487a31f6bccd401a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_Common.spriteatlas using Guid(7d24a8ce175df4f1487a31f6bccd401a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94eaad2f77d51d5e5c35e7f49bfe69a0') in 0.027784 seconds
+  Import took 0.064240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/15_Reward.spriteatlas
+  artifactKey: Guid(3c3d0f7fec46543bd969145bca9f8659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/15_Reward.spriteatlas using Guid(3c3d0f7fec46543bd969145bca9f8659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1a77e213667596309c77805ed0596d') in 0.007224 seconds
+  Import took 0.011358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/02_Character.spriteatlas
+  artifactKey: Guid(f6289769f39cf4499b87ae1a18434a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/02_Character.spriteatlas using Guid(f6289769f39cf4499b87ae1a18434a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296e9cf74052219d6f9fbbcc95a036c1') in 0.010571 seconds
+  Import took 0.015012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_256x256.spriteatlas
+  artifactKey: Guid(20959a76aff9c496e898b9ea06aeb563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_256x256.spriteatlas using Guid(20959a76aff9c496e898b9ea06aeb563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f64bf2782423347761f7bf60c21c04') in 0.007502 seconds
+  Import took 0.012487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos256x256.spriteatlas
+  artifactKey: Guid(12e95a3f28a42452e861bc75bac7962f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos256x256.spriteatlas using Guid(12e95a3f28a42452e861bc75bac7962f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a25297cd5c0fd3086d29ae52f786f43') in 0.007885 seconds
+  Import took 0.012080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_512x512.spriteatlas
+  artifactKey: Guid(69c556ddc2e47491db8cc6544859a2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_512x512.spriteatlas using Guid(69c556ddc2e47491db8cc6544859a2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f814c8c3edb8efd994bbbcdaff5e91b') in 0.008186 seconds
+  Import took 0.013471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos180x180.spriteatlas
+  artifactKey: Guid(b14d07515adee48e4bebaf570c7e91d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos180x180.spriteatlas using Guid(b14d07515adee48e4bebaf570c7e91d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21983fc86367b066432d3237d6f511d8') in 0.008126 seconds
+  Import took 0.011740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/09_Result.spriteatlas
+  artifactKey: Guid(897c20d12ef2742c4838dbe7afd97d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/09_Result.spriteatlas using Guid(897c20d12ef2742c4838dbe7afd97d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc56c27bc4369666cd9894e3b631dfc0') in 0.008116 seconds
+  Import took 0.012927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/13_Shop.spriteatlas
+  artifactKey: Guid(547d2321301234c66baca4009f7720bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/13_Shop.spriteatlas using Guid(547d2321301234c66baca4009f7720bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96813f5b684a3516e0b043c18140240e') in 0.008640 seconds
+  Import took 0.013807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/05_Stage.spriteatlas
+  artifactKey: Guid(ae8ccd0482579463ca4493a41f0db77d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/05_Stage.spriteatlas using Guid(ae8ccd0482579463ca4493a41f0db77d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f9b9113107d116cdd1e4101f15ff38') in 0.008034 seconds
+  Import took 0.012358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/18_PowerSave.spriteatlas
+  artifactKey: Guid(d9e3b8c6ecc0e42c3b5574446da73bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/18_PowerSave.spriteatlas using Guid(d9e3b8c6ecc0e42c3b5574446da73bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9962cb128a9a97e479c33af5abe2a878') in 0.008370 seconds
+  Import took 0.012928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/16_Roulette.spriteatlas
+  artifactKey: Guid(93f73de49235a4e5094f7097754e6ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/16_Roulette.spriteatlas using Guid(93f73de49235a4e5094f7097754e6ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4adfa13a2a0165f46f2e6336aecf8c0') in 0.009317 seconds
+  Import took 0.013787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_32x32.spriteatlas
+  artifactKey: Guid(67cd08bcfd9c84a65ab583563da2517d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_32x32.spriteatlas using Guid(67cd08bcfd9c84a65ab583563da2517d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df4bdaccee42b360405b8aff0731778') in 0.007660 seconds
+  Import took 0.011405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/17_AdRemove.spriteatlas
+  artifactKey: Guid(d918bc2fad6bd4ef4b5c67730bea878c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/17_AdRemove.spriteatlas using Guid(d918bc2fad6bd4ef4b5c67730bea878c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17fc1e7a9116ec11b49a087e043aef38') in 0.007107 seconds
+  Import took 0.011216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/08_PauseContinue.spriteatlas
+  artifactKey: Guid(448d5060d5dc64ea8b1adfee46974ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/08_PauseContinue.spriteatlas using Guid(448d5060d5dc64ea8b1adfee46974ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381be480cc097381e7ad7d21c021ad38') in 0.007049 seconds
+  Import took 0.012597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/01_Home.spriteatlas
+  artifactKey: Guid(f4c92629cf3ce43c5b31f25a6d9d2fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/01_Home.spriteatlas using Guid(f4c92629cf3ce43c5b31f25a6d9d2fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bc465148ff1d5c49a6953354ee1fd9') in 0.007673 seconds
+  Import took 0.011820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/11_Setting.spriteatlas
+  artifactKey: Guid(46e063bbb888f4855869b823e5158090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/11_Setting.spriteatlas using Guid(46e063bbb888f4855869b823e5158090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ceb68bcb02c9a2e723c3979189426f8') in 0.007685 seconds
+  Import took 0.011504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos128x128.spriteatlas
+  artifactKey: Guid(d484c92346734483b9285d40b48d0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos128x128.spriteatlas using Guid(d484c92346734483b9285d40b48d0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aaa439f78dc739ad469ca8bd5b3da30') in 0.007587 seconds
+  Import took 0.011534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/12_Mission.spriteatlas
+  artifactKey: Guid(9ba746b08e5684595ada9852ce54136b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/12_Mission.spriteatlas using Guid(9ba746b08e5684595ada9852ce54136b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74842ceb646ec4f0ab99e9ddec2990da') in 0.007516 seconds
+  Import took 0.012724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/21_BattlePass.spriteatlas
+  artifactKey: Guid(6d6b081ca2b5a494abfa7821a7425f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/21_BattlePass.spriteatlas using Guid(6d6b081ca2b5a494abfa7821a7425f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd571f94f1e03c0f45ea8184cda6ef609') in 0.008032 seconds
+  Import took 0.011910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos_32x32.spriteatlas
+  artifactKey: Guid(1decd7f1575ee4ad084a2870ee434fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos_32x32.spriteatlas using Guid(1decd7f1575ee4ad084a2870ee434fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd719754c135e511c4d70109c977cab5e') in 0.009008 seconds
+  Import took 0.013173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_32x32.spriteatlas
+  artifactKey: Guid(31e9ba4c6455747ef8bba88dc2e1d8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_32x32.spriteatlas using Guid(31e9ba4c6455747ef8bba88dc2e1d8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac5334a2f78e7a641781242362abd018') in 0.006884 seconds
+  Import took 0.010985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_Title.spriteatlas
+  artifactKey: Guid(3112e4c9285cc4262bbd6bb5d56bf31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_Title.spriteatlas using Guid(3112e4c9285cc4262bbd6bb5d56bf31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026850351bc2a44b020fd8263170f519') in 0.007005 seconds
+  Import took 0.011552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos64x64.spriteatlas
+  artifactKey: Guid(ecb2980e1532a403d8bd2b268c7170c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos64x64.spriteatlas using Guid(ecb2980e1532a403d8bd2b268c7170c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba83acc9561b178d5a607691dcc07416') in 0.008195 seconds
+  Import took 0.012006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/14_Ranking.spriteatlas
+  artifactKey: Guid(3d79a4d83ddb548df98eb528e1b8b662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/14_Ranking.spriteatlas using Guid(3d79a4d83ddb548df98eb528e1b8b662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bb601eae0bd2e30dd5ab79701040a4') in 0.007758 seconds
+  Import took 0.012075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos512x512.spriteatlas
+  artifactKey: Guid(d26b05aa593b84b228e5858c6cb3b32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcos512x512.spriteatlas using Guid(d26b05aa593b84b228e5858c6cb3b32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a32d977f85aadea3880b9d582a173bc') in 0.007012 seconds
+  Import took 0.010659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/06_PalyBoss.spriteatlas
+  artifactKey: Guid(16c535c8ee78c41829b6417dab2a32fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/06_PalyBoss.spriteatlas using Guid(16c535c8ee78c41829b6417dab2a32fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b05cf1849f80f3d16b15b348d97b2ed') in 0.008207 seconds
+  Import took 0.012440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_128x128.spriteatlas
+  artifactKey: Guid(7f25b6be244aa4092b5855cf7c107374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_128x128.spriteatlas using Guid(7f25b6be244aa4092b5855cf7c107374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66159633900b913723613c6ff6736317') in 0.007427 seconds
+  Import took 0.011099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/20_Rate.spriteatlas
+  artifactKey: Guid(8aebf4738bd5443c4a4ea0bb46311cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/20_Rate.spriteatlas using Guid(8aebf4738bd5443c4a4ea0bb46311cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc7cabec81161f747a00e1645e55bad3') in 0.006910 seconds
+  Import took 0.010861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_256x256.spriteatlas
+  artifactKey: Guid(a40e68bedc85c40159e2808c592d81f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_256x256.spriteatlas using Guid(a40e68bedc85c40159e2808c592d81f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df992d1eb9e8c283cbe98ae5e30d305') in 0.007046 seconds
+  Import took 0.011718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcons.spriteatlas
+  artifactKey: Guid(9ce342b37b80e4bd6b2c9d451a9b525a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_ItemIcons.spriteatlas using Guid(9ce342b37b80e4bd6b2c9d451a9b525a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a291aa9c55ab11f31ef75441db61743') in 0.007882 seconds
+  Import took 0.011917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/07_Play.spriteatlas
+  artifactKey: Guid(2bfa8798e67fd449d818856594bd52de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/07_Play.spriteatlas using Guid(2bfa8798e67fd449d818856594bd52de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12bf76cae917ad46f3b04db8b5712d8') in 0.007111 seconds
+  Import took 0.011670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_64x64.spriteatlas
+  artifactKey: Guid(f720b2e1e6f154eadaac28171a7aa0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_64x64.spriteatlas using Guid(f720b2e1e6f154eadaac28171a7aa0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121711b29e66a3d629b29e9e564dbbcf') in 0.007427 seconds
+  Import took 0.011535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/04_Equipment.spriteatlas
+  artifactKey: Guid(e7500d79fa67240409a11e1ffa78f64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/04_Equipment.spriteatlas using Guid(e7500d79fa67240409a11e1ffa78f64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05fac6c2360863e2b44103959bfc537b') in 0.007490 seconds
+  Import took 0.011676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/10_Levelup.spriteatlas
+  artifactKey: Guid(b9b3ccd5184864bd3ad57256bb220cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/10_Levelup.spriteatlas using Guid(b9b3ccd5184864bd3ad57256bb220cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7a243ac492a806fc6c772a51cca6cf') in 0.007207 seconds
+  Import took 0.011085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_140x140.spriteatlas
+  artifactKey: Guid(be573f2cbb0db46ac93f2ce9523d05ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_140x140.spriteatlas using Guid(be573f2cbb0db46ac93f2ce9523d05ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f83048128f3b141fe553b4875b1fd11') in 0.006970 seconds
+  Import took 0.011085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/99_Popup.spriteatlas
+  artifactKey: Guid(b183e904a330a4c63a2e2b5f65d84bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/99_Popup.spriteatlas using Guid(b183e904a330a4c63a2e2b5f65d84bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a69cbd7e24d9b13e93a49f1f9aad3c') in 0.007089 seconds
+  Import took 0.011351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/19_MessagePopup.spriteatlas
+  artifactKey: Guid(17b6654c6b0c641fba74ef5d84851b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/19_MessagePopup.spriteatlas using Guid(17b6654c6b0c641fba74ef5d84851b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc02d28a3678a4aef8c040264731670') in 0.008623 seconds
+  Import took 0.012598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/22_Guild.spriteatlas
+  artifactKey: Guid(695a9ec95a1104265aadfcf4f702d81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/22_Guild.spriteatlas using Guid(695a9ec95a1104265aadfcf4f702d81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d15e66993eb97b0bb921e149c2f8231') in 0.007936 seconds
+  Import took 0.012028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/03_CharacterSelect.spriteatlas
+  artifactKey: Guid(c8aa8e922657a4df4af0a76bd224d970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/03_CharacterSelect.spriteatlas using Guid(c8aa8e922657a4df4af0a76bd224d970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1781244fc063aba85d189c3775ab56d1') in 0.006691 seconds
+  Import took 0.010446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_SmallSize.spriteatlas
+  artifactKey: Guid(2d7c236161fbd45ff995be9cf0b1b982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_PictoIcons_SmallSize.spriteatlas using Guid(2d7c236161fbd45ff995be9cf0b1b982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026cc6f5776748309dcfa943ae95313a') in 0.007524 seconds
+  Import took 0.011802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_512x512.spriteatlas
+  artifactKey: Guid(e6023db7396c64e23914a4db2f7cb0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_512x512.spriteatlas using Guid(e6023db7396c64e23914a4db2f7cb0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53fc9718cf796a7293669d56a1524c56') in 0.007667 seconds
+  Import took 0.011387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_128x128.spriteatlas
+  artifactKey: Guid(3621e28d0519d47de8b007383cfc7e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_EquipmentIcons_128x128.spriteatlas using Guid(3621e28d0519d47de8b007383cfc7e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc009ef79fb3875dc37e856be28e87ee') in 0.006554 seconds
+  Import took 0.010294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Sprites/00_Loading.spriteatlas
+  artifactKey: Guid(471674eb94b2c4ee6af55b73c8c24c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Sprites/00_Loading.spriteatlas using Guid(471674eb94b2c4ee6af55b73c8c24c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2f08c9a3d364b51feae6c4effad097') in 0.007328 seconds
+  Import took 0.011760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.498471 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_circle_line1.mat
+  artifactKey: Guid(319214590285f466681adf0db0b65300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_circle_line1.mat using Guid(319214590285f466681adf0db0b65300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8cc75366ece47bcb73113a8fd002de8') in 0.089110 seconds
+  Import took 0.092910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_star1.mat
+  artifactKey: Guid(b7ce8cef00ac44e57a4ea6c6e258daca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_star1.mat using Guid(b7ce8cef00ac44e57a4ea6c6e258daca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d752ae9e617d79ef9770a0c153d3afe') in 0.030745 seconds
+  Import took 0.035733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_circle_line2.mat
+  artifactKey: Guid(975951b3917e24454ad641312792c3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_circle_line2.mat using Guid(975951b3917e24454ad641312792c3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4dfe10aaf72995bceb491036237878e') in 0.032822 seconds
+  Import took 0.037142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_glow2.mat
+  artifactKey: Guid(15e1554a23dae49ba928deb6dfebdeb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_glow2.mat using Guid(15e1554a23dae49ba928deb6dfebdeb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc3c1060d2f9b6992844acae5e9449f') in 0.035157 seconds
+  Import took 0.039472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_circle_line2.mat
+  artifactKey: Guid(975951b3917e24454ad641312792c3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_circle_line2.mat using Guid(975951b3917e24454ad641312792c3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4dfe10aaf72995bceb491036237878e') in 0.018108 seconds
+  Import took 0.022453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_glow3.mat
+  artifactKey: Guid(a386e8dc185cf4764a4f11a6981b785c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_glow3.mat using Guid(a386e8dc185cf4764a4f11a6981b785c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b664c4d2936d5d170b4294503ea82cab') in 0.028995 seconds
+  Import took 0.032882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_circle_line3.mat
+  artifactKey: Guid(4b0cfe4138f0745febfa2e801596d323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_circle_line3.mat using Guid(4b0cfe4138f0745febfa2e801596d323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2811bc7ab1a56de312b78280df1fc7') in 0.033319 seconds
+  Import took 0.037195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_glow1.mat
+  artifactKey: Guid(54551c15f264e462e932e534cacf0d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_glow1.mat using Guid(54551c15f264e462e932e534cacf0d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6325ddfd390483b396173758f3f7b47b') in 0.028444 seconds
+  Import took 0.031906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_dust.mat
+  artifactKey: Guid(d7d2a7452d9ed416a8047928eecabce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_dust.mat using Guid(d7d2a7452d9ed416a8047928eecabce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0274161c846cfce1abbe60672d0c22ce') in 0.029535 seconds
+  Import took 0.032994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_star2.mat
+  artifactKey: Guid(0e326994c7b0a49e7b6025fb16ba1f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Materials/fx_star2.mat using Guid(0e326994c7b0a49e7b6025fb16ba1f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e8f91748ba1433ee4683cb744f8938') in 0.029157 seconds
+  Import took 0.032868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084761 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_circle_line1.png
+  artifactKey: Guid(3d33bbf47918d4deca06bc016b4c945d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_circle_line1.png using Guid(3d33bbf47918d4deca06bc016b4c945d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc66102f2449b395b86e77378aabd134') in 0.027343 seconds
+  Import took 0.032049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_glow1.png
+  artifactKey: Guid(a14382567192c4fc98d48eaef7301e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_glow1.png using Guid(a14382567192c4fc98d48eaef7301e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27637a88c3ec570de7a73d0ad8143108') in 0.013028 seconds
+  Import took 0.017234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_dust1.png
+  artifactKey: Guid(8aca5e8ea241b42858f3d9644e848b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_dust1.png using Guid(8aca5e8ea241b42858f3d9644e848b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc229397e27a5e2a08fa86783a27d4a0') in 0.022025 seconds
+  Import took 0.026678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_star1.png
+  artifactKey: Guid(406bbad3262f641588ffe77b93d48b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_star1.png using Guid(406bbad3262f641588ffe77b93d48b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3901cf4617075d6af7bc6d454e0460') in 0.017534 seconds
+  Import took 0.022052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_circle_line3.png
+  artifactKey: Guid(bd709b9c9f1bf4c77a77678488b94d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_circle_line3.png using Guid(bd709b9c9f1bf4c77a77678488b94d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba98ce7a23b121f3583dd1a7ad6fbbc') in 0.020233 seconds
+  Import took 0.024585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_star2.png
+  artifactKey: Guid(31cea93cb8c1f44f0aed5ca96ed9b764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_star2.png using Guid(31cea93cb8c1f44f0aed5ca96ed9b764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4352181038ff758b588a55b523c049') in 0.013458 seconds
+  Import took 0.018332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_glow3.png
+  artifactKey: Guid(01a509805ee1e4dbd956bc2c1960403c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_glow3.png using Guid(01a509805ee1e4dbd956bc2c1960403c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8392e92e04967b9be733e1f17841af31') in 0.014382 seconds
+  Import took 0.018472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_glow2.png
+  artifactKey: Guid(4c6392db171184bb98d834e1fbd3769e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_glow2.png using Guid(4c6392db171184bb98d834e1fbd3769e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2855625e7de6bd76ae2c4dc7b7dd07') in 0.020606 seconds
+  Import took 0.025019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_circle_line2.png
+  artifactKey: Guid(472f66ba810b14ac484d18ee7316a974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Pro Kit Fantasy RPG/Particles/Textures/fx_circle_line2.png using Guid(472f66ba810b14ac484d18ee7316a974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38383de74da1165ebfa5b3564b1d86c') in 0.019795 seconds
+  Import took 0.024243 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
