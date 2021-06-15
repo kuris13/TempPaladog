@@ -21,15 +21,16 @@ public class GameManager : MonoBehaviour
 
         if (!isStarted)
         {
-            SetUnitStatus("Unit1", 2, 1, 1, 1, 1, 0);
-            SetUnitStatus("Unit2", 1, 10, 10, 10, 10, 0);
-            SetUnitStatus("Unit3", 0, 20, 20, 20, 20, 0);
-            SetUnitStatus("Unit4", 0, 30, 30, 30, 30, 0);
-            SetUnitStatus("Unit5", 0, 30, 30, 30, 30, 0);
-            SetUnitStatus("Unit6", 0, 30, 30, 30, 30, 0);
-            SetUnitStatus("Unit7", 0, 30, 30, 30, 30, 0);
-            SetUnitStatus("Unit8", 0, 30, 30, 30, 30, 0);
-            SetUnitStatus("Unit9", 0, 30, 30, 30, 30, 0);
+            //0Lock, 1HP, 2ATK, 3SPD, 4DELAY, 5LV, 6PCOST 7UCost
+            SetUnitStatus("Unit1", 2,  1,  1,  1,  1, 1,  0 ,1);
+            SetUnitStatus("Unit2", 1, 10, 10, 10, 10, 0, 10 , 2);
+            SetUnitStatus("Unit3", 0, 20, 20, 20, 20, 0, 20, 3);
+            SetUnitStatus("Unit4", 0, 30, 30, 30, 30, 0, 30, 4);
+            SetUnitStatus("Unit5", 0, 40, 30, 30, 30, 0, 40, 5);
+            SetUnitStatus("Unit6", 0, 50, 30, 30, 30, 0, 100, 6);
+            SetUnitStatus("Unit7", 0, 60, 30, 30, 30, 0, 200, 7);
+            SetUnitStatus("Unit8", 0, 70, 30, 30, 30, 0, 500, 8);
+            SetUnitStatus("Unit9", 0, 80, 30, 30, 30, 0, 1000, 9);
 
             PlayerPrefs.SetInt("MyMoney", 1000);
 
@@ -44,12 +45,13 @@ public class GameManager : MonoBehaviour
 
     bool isStarted = false;
 
+    public string FocusUnit = null;
 
-    public void SetUnitStatus(string UnitName,int Lock ,int HP, int ATK, int SPEED, int DELAY, int Lv)
+    public void SetUnitStatus(string UnitName,int Lock ,int HP, int ATK, int SPEED, int DELAY, int Lv, int PCost, int UCost)
     {
         //게임을 첫 번째로 실행했다면 기본 정보 만들기
         //임시로 유닛3까지만 만듬
-        int[] number = new int[6];
+        int[] number = new int[8];
 
         number[0] = Lock;
         number[1] = HP; 
@@ -57,6 +59,8 @@ public class GameManager : MonoBehaviour
         number[3] = SPEED;
         number[4] = DELAY;
         number[5] = Lv;
+        number[6] = PCost;
+        number[7] = UCost;
 
         string strArr = "";
 
@@ -103,7 +107,11 @@ public class GameManager : MonoBehaviour
 
         //유닛들의 기본 정보 가져와서 뿌려주기
         /*
+<<<<<<< Updated upstream
             
+=======
+        
+>>>>>>> Stashed changes
 
 
 

@@ -10,7 +10,22 @@ public class SelectUnit : MonoBehaviour
     string UnitName;
     int[] UnitStatus;
     public GameObject NextUnit;
+    MyMoneyScript myMoneyScript;
+    StatusCanvas statusCanvas;
 
+    void Start()
+    {
+        btn = GetComponent<Button>();
+        btn.onClick.AddListener(OnClickButton);
+        myMoneyScript = GameObject.Find("Money").transform.GetChild(0).gameObject.GetComponent<MyMoneyScript>();
+        statusCanvas = GameObject.Find("StatusCanvas").gameObject.GetComponent<StatusCanvas>();
+
+
+        UnitName = name;
+
+        SetImage();
+
+    }
 
 
     public void UnLock()
@@ -65,49 +80,78 @@ public class SelectUnit : MonoBehaviour
         {
             //회색 이미지 상태
             //내가 가진 돈이 요구치 보다 많다면 해금 
-            if(PlayerPrefs.GetInt("MyMoney") > 100 )
+            if(PlayerPrefs.GetInt("MyMoney") >= UnitStatus[6] )
             {
-
+                //유닛 레벨업과 테긋트 바꾸기
                 transform.Find("Text").GetComponent<Text>().text = ++UnitStatus[5] + "/20";
-                Debug.Log("해금됨");
 
                 //유닛스텟 업데이트 하기
                 UnitStatus[0] = 2;
 
                 //스프라이트 바꾸기
-                //transform.GetComponent<Image>().color = new Color(255, 255, 255, 255);
-                //transform.Find("Unit_img").GetComponent<Image>().color = new Color(255, 255, 255, 255);
-                
+                ChageSpriteColor(255, 255, 255, 255);
+
                 //다음 유닛 언락하기
-                if(NextUnit != null)
+                if (NextUnit != null)
                     NextUnit.GetComponent<SelectUnit>().UnLock();
 
-
+                //변경 사하 저장
                 GameManager.instance.SetUnitStatus(UnitName,UnitStatus);
+
+                //내 돈 소비
+                PlayerPrefs.SetInt("MyMoney", (PlayerPrefs.GetInt("MyMoney") - UnitStatus[6]));
+
+                //돈 갱신
+                myMoneyScript.MyMoneyRefresh();
+            }
+
+            //상세창 갱신
+            if(GameManager.instance.FocusUnit != UnitName)
+            {
+                GameManager.instance.FocusUnit = UnitName;
+                statusCanvas.LoadUnitStatus(UnitName);
             }
 
         }
         //2 : 구매 되어 있다면 렙 올리기
         else if (UnitStatus[0] == 2)
         {
+            /* 여기 있을 기능이 아님
             //업글 가능 상태
+            //내 돈이 업그레이드 비용보다 크다면
+            if(PlayerPrefs.GetInt("MyMoney") >= UnitStatus[7])
+            {
+                //유닛의 레벨업과 텍스트 바꾸기
+
+                transform.Find("Text").GetComponent<Text>().text = ++UnitStatus[5] + "/20";
+
+                //변경된 스텟 저장
+                GameManager.instance.SetUnitStatus(UnitName, UnitStatus);
+
+                //내 돈 소비
+                PlayerPrefs.SetInt("MyMoney", (PlayerPrefs.GetInt("MyMoney") - UnitStatus[7]));
+
+                //돈 갱신 
+                myMoneyScript.MyMoneyRefresh();
+
+
+
+            }
+             */
+
+            //상세창 갱신
+            if (GameManager.instance.FocusUnit != UnitName)
+            {
+                GameManager.instance.FocusUnit = UnitName;
+                statusCanvas.LoadUnitStatus(UnitName);
+            }
 
         }
 
         Debug.Log(UnitName);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        btn = GetComponent<Button>();
-        btn.onClick.AddListener(OnClickButton);
-
-        UnitName = name;
-
-        SetImage();
-
-    }
+    
 
     void SetImage()
     {
@@ -116,21 +160,28 @@ public class SelectUnit : MonoBehaviour
         //UnLock
         if(UnitStatus[0] == 1)
         {
-            GetComponent<Image>().color = new Color(100, 100, 100, 255);
-            transform.Find("Unit_img").GetComponent<Image>().color = new Color(100, 100, 100, 255);
+            ChageSpriteColor(100, 100, 100, 255);
+
+            transform.Find("Text").GetComponent<Text>().text = ""+UnitStatus[6];
+            
         }
-        /*
         else if(UnitStatus[0] == 2)
         {
-            GetComponent<Image>().color = new Color(255, 255, 255, 255);
-            transform.Find("Unit_img").GetComponent<Image>().color = new Color(255, 255, 255, 255);
-        }
+            ChageSpriteColor(255, 255, 255, 255);
 
-         */
+            transform.Find("Text").GetComponent<Text>().text = UnitStatus[5]+"/20";
+        }
 
     }
 
+    void ChageSpriteColor(float r, float g, float b, float a)
+    {
+        GetComponent<Image>().color = new Color(r / 255f, g / 255f, b /255, a/255f);
+        transform.Find("Unit_img").GetComponent<Image>().color = new Color(r / 255f, g / 255f, b /255, a/255f);
+        transform.Find("Text").GetComponent<Text>().color = new Color(1,1,1,1);
+    }
 
+    
 
 
 }
