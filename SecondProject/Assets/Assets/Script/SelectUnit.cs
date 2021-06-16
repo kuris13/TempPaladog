@@ -60,14 +60,6 @@ public class SelectUnit : MonoBehaviour
     {
         LoadData();
 
-
-
-        //UnitName을 이용하여 유닛 설명판 띄우기
-
-
-        //Unit의 해금 상태를 구하기 -> Unit의 정보 불러오기
-
-
         //해금 상태에 따라
         //0 : 해금되어 있지 않은 유닛은 터치 불가능!!
         if (UnitStatus[0] ==0 )
@@ -116,29 +108,6 @@ public class SelectUnit : MonoBehaviour
         //2 : 구매 되어 있다면 렙 올리기
         else if (UnitStatus[0] == 2)
         {
-            /* 여기 있을 기능이 아님
-            //업글 가능 상태
-            //내 돈이 업그레이드 비용보다 크다면
-            if(PlayerPrefs.GetInt("MyMoney") >= UnitStatus[7])
-            {
-                //유닛의 레벨업과 텍스트 바꾸기
-
-                transform.Find("Text").GetComponent<Text>().text = ++UnitStatus[5] + "/20";
-
-                //변경된 스텟 저장
-                GameManager.instance.SetUnitStatus(UnitName, UnitStatus);
-
-                //내 돈 소비
-                PlayerPrefs.SetInt("MyMoney", (PlayerPrefs.GetInt("MyMoney") - UnitStatus[7]));
-
-                //돈 갱신 
-                myMoneyScript.MyMoneyRefresh();
-
-
-
-            }
-             */
-
             //상세창 갱신
             if (GameManager.instance.FocusUnit != UnitName)
             {
@@ -148,7 +117,6 @@ public class SelectUnit : MonoBehaviour
 
         }
 
-        Debug.Log(UnitName);
     }
 
     
@@ -163,6 +131,8 @@ public class SelectUnit : MonoBehaviour
             ChageSpriteColor(100, 100, 100, 255);
 
             transform.Find("Text").GetComponent<Text>().text = ""+UnitStatus[6];
+
+            GetComponent<Image>().raycastTarget = true;
             
         }
         else if(UnitStatus[0] == 2)
@@ -170,7 +140,12 @@ public class SelectUnit : MonoBehaviour
             ChageSpriteColor(255, 255, 255, 255);
 
             transform.Find("Text").GetComponent<Text>().text = UnitStatus[5]+"/20";
+            GetComponent<Image>().raycastTarget = true;
+
         }
+
+
+
 
     }
 

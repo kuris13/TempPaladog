@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-        if (!isStarted)
+        if (PlayerPrefs.GetInt("isStarted")  != 1) 
         {
             //0Lock, 1HP, 2ATK, 3SPD, 4DELAY, 5LV, 6PCOST 7UCost
             SetUnitStatus("Unit1", 2,  1,  1,  1,  1, 1,  0 ,1);
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
             PlayerPrefs.SetInt("MyMoney", 1000);
 
-
+            PlayerPrefs.SetInt("isStarted", 1);
         }
 
 
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    bool isStarted = false;
+
 
     public string FocusUnit = null;
 
