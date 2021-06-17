@@ -21,16 +21,21 @@ public class GameManager : MonoBehaviour
 
         if (PlayerPrefs.GetInt("isStarted")  != 1) 
         {
-            //0Lock, 1HP, 2ATK, 3SPD, 4DELAY, 5LV, 6PCOST 7UCost
-            SetUnitStatus("Unit1", 2,  1,  1,  1,  1, 1,  0 ,1);
-            SetUnitStatus("Unit2", 1, 10, 10, 10, 10, 0, 10 , 2);
-            SetUnitStatus("Unit3", 0, 20, 20, 20, 20, 0, 20, 3);
-            SetUnitStatus("Unit4", 0, 30, 30, 30, 30, 0, 30, 4);
-            SetUnitStatus("Unit5", 0, 40, 30, 30, 30, 0, 40, 5);
-            SetUnitStatus("Unit6", 0, 50, 30, 30, 30, 0, 100, 6);
-            SetUnitStatus("Unit7", 0, 60, 30, 30, 30, 0, 200, 7);
-            SetUnitStatus("Unit8", 0, 70, 30, 30, 30, 0, 500, 8);
-            SetUnitStatus("Unit9", 0, 80, 30, 30, 30, 0, 1000, 9);
+            //외부에서 데이터를 불러오도록 만들어야함
+            //0. Lock,
+            //1. HP, 2. ATK, 3. SPD, 4. DELAY,
+            //5. LV,
+            //6. PCOST, 7. UCost,
+            //8. MaxHp, 9. MaxAtk, 10. MaxSpd, 11. MaxDly 
+            SetUnitStatus("Unit1", 1,  0, 0, 0, 0,   0,    0,  1,    100,  50,  20,  20);
+            SetUnitStatus("Unit2", 0,  0, 0, 0, 0,   0,    10, 2,    200,  50,  40,  30);
+            SetUnitStatus("Unit3", 0,  0, 0, 0, 0,   0,    20, 3,    300, 100,  20,  40);
+            SetUnitStatus("Unit4", 0,  0, 0, 0, 0,   0,    40, 4,    500,   5, 100,  50);
+            SetUnitStatus("Unit5", 0,  0, 0, 0, 0,   0,    60, 5,    500,  50,  20,  60);
+            SetUnitStatus("Unit6", 0,  0, 0, 0, 0,   0,   100, 6,    600,  60,  30,  70);
+            SetUnitStatus("Unit7", 0,  0, 0, 0, 0,   0,   200, 7,   1000,  70,  40,  80);
+            SetUnitStatus("Unit8", 0,  0, 0, 0, 0,   0,   300, 8,   1000,  80,  50,  90);
+            SetUnitStatus("Unit9", 0,  0, 0, 0, 0,   0,   400, 9,   2000,  90,  60, 100);
 
             PlayerPrefs.SetInt("MyMoney", 1000);
 
@@ -47,11 +52,15 @@ public class GameManager : MonoBehaviour
 
     public string FocusUnit = null;
 
-    public void SetUnitStatus(string UnitName,int Lock ,int HP, int ATK, int SPEED, int DELAY, int Lv, int PCost, int UCost)
+    public void SetUnitStatus(string UnitName,
+        int Lock ,
+        int HP, int ATK, int SPEED, int DELAY,
+        int Lv, int PCost, int UCost,
+        int MaxHp, int MaxAtk, int MaxSpd, int MaxDly )
     {
         //게임을 첫 번째로 실행했다면 기본 정보 만들기
         //임시로 유닛3까지만 만듬
-        int[] number = new int[8];
+        int[] number = new int[12];
 
         number[0] = Lock;
         number[1] = HP; 
@@ -61,6 +70,11 @@ public class GameManager : MonoBehaviour
         number[5] = Lv;
         number[6] = PCost;
         number[7] = UCost;
+        number[8] = MaxHp;
+        number[9] = MaxAtk;
+        number[10] = MaxSpd;
+        number[11] = MaxDly;
+        
 
         string strArr = "";
 
@@ -107,11 +121,7 @@ public class GameManager : MonoBehaviour
 
         //유닛들의 기본 정보 가져와서 뿌려주기
         /*
-<<<<<<< Updated upstream
-            
-=======
-        
->>>>>>> Stashed changes
+
 
 
 

@@ -47,20 +47,8 @@ public class StatusCanvas : MonoBehaviour
         //내 돈이 업그레이드 비용보다 크다면
         if (PlayerPrefs.GetInt("MyMoney") >= UnitStatus[7])
         {
-            //유닛의 레벨업과 텍스트 바꾸기
-            GameObject.Find(UnitName).transform.Find("Text").GetComponent<Text>().text = ++UnitStatus[5] + "/20";
-
-            {
-                //temp value
-                UnitStatus[1] += 2;
-                UnitStatus[2] += 5;
-                UnitStatus[3] += 1;
-                UnitStatus[4] += 3;
-            }
-
-
-            //변경된 스텟 저장
-            GameManager.instance.SetUnitStatus(UnitName, UnitStatus);
+            
+            UpgradeStatus(UnitName);
 
             //내 돈 소비
             PlayerPrefs.SetInt("MyMoney", (PlayerPrefs.GetInt("MyMoney") - UnitStatus[7]));
@@ -68,16 +56,40 @@ public class StatusCanvas : MonoBehaviour
             //돈 갱신 
             myMoneyScript.MyMoneyRefresh();
 
-            RefreshStatus();
-
-
         }
+    }
+
+    public void UpgradeStatus(string _UnitName)
+    {
+        LoadUnitStatus(_UnitName);
+
+        //유닛의 레벨업과 텍스트 바꾸기
+        GameObject.Find(_UnitName).transform.Find("Text").GetComponent<Text>().text = ++UnitStatus[5] + "/20";
+
+        //스텟 업그레이드
+        UnitStatus[1] += UnitStatus[8]  / 20;
+        UnitStatus[2] += UnitStatus[9]  / 20;
+        UnitStatus[3] += UnitStatus[10] / 20;
+        UnitStatus[4] += UnitStatus[11] / 20;
+
+        Debug.Log("set "+ _UnitName +"  : hp" + UnitStatus[1] + ", atk" + UnitStatus[2] + ", spd" + UnitStatus[3] + ", dly" + UnitStatus[4] );
+
+        //변경된 스텟 저장
+        GameManager.instance.SetUnitStatus(_UnitName, UnitStatus);
+
+        RefreshStatus();
+
+        UpgradeStatusPopUpTxt(UnitStatus[8] / 20, UnitStatus[9] / 20, UnitStatus[10] / 20, UnitStatus[11] / 20);
+
     }
 
 
     public void LoadUnitStatus(string _UnitName)
     {
         UnitName = _UnitName;
+
+        Debug.Log(UnitName +" "+ _UnitName);
+
         string[] dataArr = PlayerPrefs.GetString(UnitName).Split(',');
 
         UnitStatus = new int[dataArr.Length];
@@ -87,35 +99,54 @@ public class StatusCanvas : MonoBehaviour
             UnitStatus[i] = System.Convert.ToInt32(dataArr[i]);
         }
 
+        Debug.Log("loadStatus " + UnitName + "  : hp" + UnitStatus[1] + ", atk" + UnitStatus[2] + ", spd" + UnitStatus[3] + ", dly" + UnitStatus[4]);
+
+
         RefreshStatus();
 
     }
 
-    void RefreshStatus()
+    public void RefreshStatus()
     {
+        Debug.Log("Refresh " + UnitName + "  : hp" + UnitStatus[1] + ", atk" + UnitStatus[2] + ", spd" + UnitStatus[3] + ", dly" + UnitStatus[4]);
+
+
         Hp.text = "" + UnitStatus[1];
         Atk.text = "" + UnitStatus[2];
         Spd.text = "" + UnitStatus[3];
         Delay.text = "" + UnitStatus[4];
         UpCost.text = "" + UnitStatus[7];
 
-        HpBar.fillAmount = UnitStatus[1] / 300f;
-        AtkBar.fillAmount = UnitStatus[2] / 300f;
-        SpdBar.fillAmount = UnitStatus[3] / 300f;
-        DlyBar.fillAmount = UnitStatus[4] / 300f;
+        HpBar.fillAmount  = UnitStatus[1] / UnitStatus[8];
+        AtkBar.fillAmount = UnitStatus[2] / UnitStatus[9];
+        SpdBar.fillAmount = UnitStatus[3] / UnitStatus[10];
+        DlyBar.fillAmount = UnitStatus[4] / UnitStatus[11];
 
-        var HpPlus = Instantiate(PlusTxt, new Vector3(0f,0f,0f), Quaternion.identity, transform);
+        
+    }
+
+    void UpgradeStatusPopUpTxt(int Hp, int Atk, int Spd, int Dly)
+    {
+        var HpPlus = Instantiate(PlusTxt, new Vector3(0f, 0f, 0f), Quaternion.identity, transform);
         HpPlus.GetComponent<RectTransform>().anchoredPosition = new Vector2(1230, 620);
+        HpPlus.GetComponent<Text>().text = "+"+Hp;
 
-        var AtkPlus = Instantiate(PlusTxt, new Vector3(0f,0f,0f), Quaternion.identity, transform);
+
+        var AtkPlus = Instantiate(PlusTxt, new Vector3(0f, 0f, 0f), Quaternion.identity, transform);
         AtkPlus.GetComponent<RectTransform>().anchoredPosition = new Vector2(1230, 490);
+        AtkPlus.GetComponent<Text>().text = "+"+Atk;
 
         var SpdPlus = Instantiate(PlusTxt, new Vector3(0f, 0f, 0f), Quaternion.identity, transform);
         SpdPlus.GetComponent<RectTransform>().anchoredPosition = new Vector2(1230, 355);
+        SpdPlus.GetComponent<Text>().text = "+"+Spd;
 
         var DlyPlus = Instantiate(PlusTxt, new Vector3(0f, 0f, 0f), Quaternion.identity, transform);
         DlyPlus.GetComponent<RectTransform>().anchoredPosition = new Vector2(1230, 215);
+        DlyPlus.GetComponent<Text>().text = "+"+Dly;
 
     }
+
+
+
 
 }

@@ -39,8 +39,8 @@ public class SelectUnit : MonoBehaviour
         SetImage();
         GetComponent<Image>().raycastTarget = true;
 
-
         
+
     }
 
     public void LoadData()
@@ -74,8 +74,9 @@ public class SelectUnit : MonoBehaviour
             //내가 가진 돈이 요구치 보다 많다면 해금 
             if(PlayerPrefs.GetInt("MyMoney") >= UnitStatus[6] )
             {
-                //유닛 레벨업과 테긋트 바꾸기
-                transform.Find("Text").GetComponent<Text>().text = ++UnitStatus[5] + "/20";
+                //유닛 레벨업과 텍스트 바꾸기
+                //transform.Find("Text").GetComponent<Text>().text = ++UnitStatus[5] + "/20";
+                statusCanvas.UpgradeStatus(UnitName);
 
                 //유닛스텟 업데이트 하기
                 UnitStatus[0] = 2;
@@ -87,7 +88,7 @@ public class SelectUnit : MonoBehaviour
                 if (NextUnit != null)
                     NextUnit.GetComponent<SelectUnit>().UnLock();
 
-                //변경 사하 저장
+                //변경 사항 저장
                 GameManager.instance.SetUnitStatus(UnitName,UnitStatus);
 
                 //내 돈 소비
@@ -95,13 +96,15 @@ public class SelectUnit : MonoBehaviour
 
                 //돈 갱신
                 myMoneyScript.MyMoneyRefresh();
+
             }
 
             //상세창 갱신
             if(GameManager.instance.FocusUnit != UnitName)
             {
                 GameManager.instance.FocusUnit = UnitName;
-                statusCanvas.LoadUnitStatus(UnitName);
+                //Debug.Log("aaaaa" + UnitName);
+                //statusCanvas.LoadUnitStatus(UnitName);
             }
 
         }
