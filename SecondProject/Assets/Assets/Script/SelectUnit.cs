@@ -30,6 +30,7 @@ public class SelectUnit : MonoBehaviour
 
     public void UnLock()
     {
+
         LoadData();
 
         UnitStatus[0] = 1;
@@ -38,8 +39,6 @@ public class SelectUnit : MonoBehaviour
         //이미지 바꿔주기
         SetImage();
         GetComponent<Image>().raycastTarget = true;
-
-        
 
     }
 
@@ -78,18 +77,12 @@ public class SelectUnit : MonoBehaviour
                 //transform.Find("Text").GetComponent<Text>().text = ++UnitStatus[5] + "/20";
                 statusCanvas.UpgradeStatus(UnitName);
 
-                //유닛스텟 업데이트 하기
-                UnitStatus[0] = 2;
-
                 //스프라이트 바꾸기
                 ChageSpriteColor(255, 255, 255, 255);
 
                 //다음 유닛 언락하기
                 if (NextUnit != null)
                     NextUnit.GetComponent<SelectUnit>().UnLock();
-
-                //변경 사항 저장
-                GameManager.instance.SetUnitStatus(UnitName,UnitStatus);
 
                 //내 돈 소비
                 PlayerPrefs.SetInt("MyMoney", (PlayerPrefs.GetInt("MyMoney") - UnitStatus[6]));
@@ -111,12 +104,14 @@ public class SelectUnit : MonoBehaviour
         //2 : 구매 되어 있다면 렙 올리기
         else if (UnitStatus[0] == 2)
         {
+            
             //상세창 갱신
             if (GameManager.instance.FocusUnit != UnitName)
             {
                 GameManager.instance.FocusUnit = UnitName;
                 statusCanvas.LoadUnitStatus(UnitName);
             }
+            
 
         }
 

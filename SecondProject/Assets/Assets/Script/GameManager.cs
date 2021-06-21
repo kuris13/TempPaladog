@@ -27,19 +27,33 @@ public class GameManager : MonoBehaviour
             //5. LV,
             //6. PCOST, 7. UCost,
             //8. MaxHp, 9. MaxAtk, 10. MaxSpd, 11. MaxDly 
-            SetUnitStatus("Unit1", 1,  0, 0, 0, 0,   0,    0,  1,    100,  50,  20,  20);
-            SetUnitStatus("Unit2", 0,  0, 0, 0, 0,   0,    10, 2,    200,  50,  40,  30);
-            SetUnitStatus("Unit3", 0,  0, 0, 0, 0,   0,    20, 3,    300, 100,  20,  40);
-            SetUnitStatus("Unit4", 0,  0, 0, 0, 0,   0,    40, 4,    500,   5, 100,  50);
-            SetUnitStatus("Unit5", 0,  0, 0, 0, 0,   0,    60, 5,    500,  50,  20,  60);
-            SetUnitStatus("Unit6", 0,  0, 0, 0, 0,   0,   100, 6,    600,  60,  30,  70);
-            SetUnitStatus("Unit7", 0,  0, 0, 0, 0,   0,   200, 7,   1000,  70,  40,  80);
-            SetUnitStatus("Unit8", 0,  0, 0, 0, 0,   0,   300, 8,   1000,  80,  50,  90);
-            SetUnitStatus("Unit9", 0,  0, 0, 0, 0,   0,   400, 9,   2000,  90,  60, 100);
+            SetUnitStatus("Unit1", 1,  0, 0, 0, 0,   0,    0,  1,    100,  50,  20,  20, 1 ,1);
+            SetUnitStatus("Unit2", 0,  0, 0, 0, 0,   0,    10, 2,    200,  50,  40,  30, 2, 2);
+            SetUnitStatus("Unit3", 0,  0, 0, 0, 0,   0,    20, 3,    300, 100,  20,  40, 3, 3);
+            SetUnitStatus("Unit4", 0,  0, 0, 0, 0,   0,    40, 4,    500,  20, 100,  50, 4, 4);
+            SetUnitStatus("Unit5", 0,  0, 0, 0, 0,   0,    60, 5,    500,  50,  20,  60, 5, 5);
+            SetUnitStatus("Unit6", 0,  0, 0, 0, 0,   0,   100, 6,    600,  60,  30,  70, 6, 6);
+            SetUnitStatus("Unit7", 0,  0, 0, 0, 0,   0,   200, 7,   1000,  70,  40,  80, 7, 7);
+            SetUnitStatus("Unit8", 0,  0, 0, 0, 0,   0,   300, 8,   1000,  80,  50,  90, 8, 8);
+            SetUnitStatus("Unit9", 0,  0, 0, 0, 0,   0,   400, 9,   2000,  90,  60, 100, 9, 9);
 
             PlayerPrefs.SetInt("MyMoney", 1000);
 
             PlayerPrefs.SetInt("isStarted", 1);
+
+            //임시 유닛 설명문
+            //나중에 바꿀 예정
+            PlayerPrefs.SetString("UnitDesHeader1", "Unit1의 설명문 제목");
+            PlayerPrefs.SetString("UnitDesContainer1", "Unit 설명문의 컨테이너입니다. \n 두 번쨰 줄입니다. ");
+
+            PlayerPrefs.SetString("UnitDesHeader2", "Unit2의 설명문 제목");
+            PlayerPrefs.SetString("UnitDesContainer2", "Unit2 설명문의 컨테이너입니다. \n 두 번쨰 줄입니다. ");
+
+            PlayerPrefs.SetString("UnitDesHeader3", "Unit3의 설명문 제목");
+            PlayerPrefs.SetString("UnitDesContainer3", "Unit3 설명문의 컨테이너입니다. \n 두 번쨰 줄입니다. ");
+
+            PlayerPrefs.SetString("UnitDesHeader4", "Unit4의 설명문 제목");
+            PlayerPrefs.SetString("UnitDesContainer4", "Unit4 설명문의 컨테이너입니다. \n 두 번쨰 줄입니다. ");
         }
 
 
@@ -56,11 +70,12 @@ public class GameManager : MonoBehaviour
         int Lock ,
         int HP, int ATK, int SPEED, int DELAY,
         int Lv, int PCost, int UCost,
-        int MaxHp, int MaxAtk, int MaxSpd, int MaxDly )
+        int MaxHp, int MaxAtk, int MaxSpd, int MaxDly,
+        int UnitDesHeader, int UnitDesContainer )
     {
         //게임을 첫 번째로 실행했다면 기본 정보 만들기
         //임시로 유닛3까지만 만듬
-        int[] number = new int[12];
+        int[] number = new int[14];
 
         number[0] = Lock;
         number[1] = HP; 
@@ -74,7 +89,12 @@ public class GameManager : MonoBehaviour
         number[9] = MaxAtk;
         number[10] = MaxSpd;
         number[11] = MaxDly;
-        
+        number[12] = UnitDesHeader;
+        number[13] = UnitDesContainer;
+
+
+
+
 
         string strArr = "";
 
