@@ -21,7 +21,7 @@ public class StatusCanvas : MonoBehaviour
     MyMoneyScript myMoneyScript;
 
     public GameObject PlusTxt;
-
+    public GameObject PopUpPanel;
     string UnitName;
 
     private void Start()
@@ -57,10 +57,30 @@ public class StatusCanvas : MonoBehaviour
     {
         //업글 가능 상태
         //내 돈이 업그레이드 비용보다 크다면
-        if (PlayerPrefs.GetInt("MyMoney") >= UnitStatus[7] * UnitStatus[5] && UnitStatus[5] < 20)
+        if (PlayerPrefs.GetInt("MyMoney") >= UnitStatus[7] * UnitStatus[5])
         {
-            UpgradeStatus(UnitName);
+            if(UnitStatus[5] < 20)
+            {
+                UpgradeStatus(UnitName);
+            }
+            else
+            {
+                //이미 만렙입니다.
+                var PopUp = Instantiate(PopUpPanel, new Vector3(0f, 0f, 0f), Quaternion.identity, transform);
+                PopUp.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+                PopUp.transform.GetChild(0).GetComponent<Text>().text = "- 이미 Max Lv에 도달했습니다 -";
+
+            }
+            
         }
+        else
+        {
+            //골드가 부족합니다.
+            var PopUp = Instantiate(PopUpPanel, new Vector3(0f, 0f, 0f), Quaternion.identity, transform);
+            PopUp.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+            PopUp.transform.GetChild(0).GetComponent<Text>().text = "- 골드가 부족합니다 -";
+        }
+        
     }
 
     public void UpgradeStatus(string _UnitName)
@@ -172,7 +192,6 @@ public class StatusCanvas : MonoBehaviour
         HpPlus.GetComponent<RectTransform>().anchoredPosition = new Vector2(1230, 620);
         HpPlus.GetComponent<Text>().text = "+"+Hp;
 
-
         var AtkPlus = Instantiate(PlusTxt, new Vector3(0f, 0f, 0f), Quaternion.identity, transform);
         AtkPlus.GetComponent<RectTransform>().anchoredPosition = new Vector2(1230, 490);
         AtkPlus.GetComponent<Text>().text = "+"+Atk;
@@ -188,6 +207,20 @@ public class StatusCanvas : MonoBehaviour
     }
 
 
+    int FibonacciSequence(int n)
+    {
+        if (n == 0)
+            return 0;
 
+        int one = 1;
+        int two = 1;
+
+        if (n == one)
+            return one;
+        else if (n == 2)
+            return two;
+        else
+            return FibonacciSequence(n - 1) + FibonacciSequence(n - 2);
+    }
 
 }

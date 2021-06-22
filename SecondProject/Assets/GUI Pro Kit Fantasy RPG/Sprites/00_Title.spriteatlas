@@ -56,7 +56,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 1a0f5ca9cbad9451797e5d784e37192b, type: 3}
-    totalSpriteSurfaceArea: 263309
+    totalSpriteSurfaceArea: 204794
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -64,7 +64,6 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 739942377642242406, guid: 28511980fceaa45919d85eb355821f8c, type: 3}
   - {fileID: 21300000, guid: b8613e90d39bd4854ac0b159c9c87ae3, type: 3}
-  - {fileID: -8092616183726542678, guid: 6b587243587f44a9f9a2b44d4bfa5560, type: 3}
   - {fileID: 21300000, guid: 562883b7af8c54a8ba7f75c84b4a5403, type: 3}
   - {fileID: 21300000, guid: a7c1a10972d01412490661187bb39a13, type: 3}
   - {fileID: 21300000, guid: 4fba695a6c48f4a1c8ecdcdd51e481dc, type: 3}
@@ -74,7 +73,6 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - title_bottom_dim_0
   - title_signin_icon_fb
-  - title_btn_start_0
   - title_text_2
   - title_signin_icon_apple
   - title_signin_icon_google

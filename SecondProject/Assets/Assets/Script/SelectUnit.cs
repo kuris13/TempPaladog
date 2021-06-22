@@ -137,7 +137,14 @@ public class SelectUnit : MonoBehaviour
         {
             ChageSpriteColor(255, 255, 255, 255);
 
-            transform.Find("Text").GetComponent<Text>().text = UnitStatus[5]+"/20";
+            if(UnitStatus[5] == 20)
+            {
+                transform.Find("Text").GetComponent<Text>().text = "Max Lv";
+            }else
+            {
+                transform.Find("Text").GetComponent<Text>().text = UnitStatus[5] + "/20";
+            }
+            
             GetComponent<Image>().raycastTarget = true;
 
         }
