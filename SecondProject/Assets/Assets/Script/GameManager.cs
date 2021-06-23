@@ -1,14 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Amazon;
+using Amazon.CognitoIdentity;
+using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.DataModel;
 
 public class GameManager : MonoBehaviour
 {
-    #region Singleton
+    
     public static GameManager instance;
+
+    // AWS IAM
+    CognitoAWSCredentials credentials;
+
+    // DynamoDB connect
+    DynamoDBContext context;
+    AmazonDynamoDBClient DBclient;
 
     void Awake()
     {
+        #region Singleton
+
         if (instance == null)
         {
             instance = this;
@@ -17,9 +30,23 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        #endregion
 
+        // AWS IAM
+        UnityInitializer.AttachToGameObject(this.gameObject);
+        credentials = new CognitoAWSCredentials("ap-northeast-2:1ea7b175-b0a2-4f54-ab28-1db51221f9eb",
+            RegionEndpoint.APNortheast2);
 
-        if (PlayerPrefs.GetInt("isStarted")  != 1) 
+        // DynamoDB
+        DBclient = new AmazonDynamoDBClient(credentials, RegionEndpoint.APNortheast2);
+        context = new DynamoDBContext(DBclient);
+
+        CreateUnit();
+        FindItem();
+
+        #region PlayerPrefs
+
+        if (PlayerPrefs.GetInt("isStarted") != 1)
         {
             //외부에서 데이터를 불러오도록 만들어야함
             //0. Lock,
@@ -27,15 +54,15 @@ public class GameManager : MonoBehaviour
             //5. LV,
             //6. PCOST, 7. UCost,
             //8. MaxHp, 9. MaxAtk, 10. MaxSpd, 11. MaxDly 
-            SetUnitStatus("Unit1", 1,  0, 0, 0, 0,   0,    0,  1,    100,  50,  20,  20, 1 ,1);
-            SetUnitStatus("Unit2", 0,  0, 0, 0, 0,   0,    10, 2,    200,  50,  40,  30, 2, 2);
-            SetUnitStatus("Unit3", 0,  0, 0, 0, 0,   0,    20, 3,    300, 100,  20,  40, 3, 3);
-            SetUnitStatus("Unit4", 0,  0, 0, 0, 0,   0,    40, 4,    500,  20, 100,  50, 4, 4);
-            SetUnitStatus("Unit5", 0,  0, 0, 0, 0,   0,    60, 5,    500,  50,  20,  60, 5, 5);
-            SetUnitStatus("Unit6", 0,  0, 0, 0, 0,   0,   100, 6,    600,  60,  30,  70, 6, 6);
-            SetUnitStatus("Unit7", 0,  0, 0, 0, 0,   0,   200, 7,   1000,  70,  40,  80, 7, 7);
-            SetUnitStatus("Unit8", 0,  0, 0, 0, 0,   0,   300, 8,   1000,  80,  50,  90, 8, 8);
-            SetUnitStatus("Unit9", 0,  0, 0, 0, 0,   0,   400, 9,   2000,  90,  60, 100, 9, 9);
+            SetUnitStatus("Unit1", 1, 0, 0, 0, 0, 0, 0, 1, 100, 50, 20, 20, 1, 1);
+            SetUnitStatus("Unit2", 0, 0, 0, 0, 0, 0, 10, 2, 200, 50, 40, 30, 2, 2);
+            SetUnitStatus("Unit3", 0, 0, 0, 0, 0, 0, 20, 3, 300, 100, 20, 40, 3, 3);
+            SetUnitStatus("Unit4", 0, 0, 0, 0, 0, 0, 40, 4, 500, 20, 100, 50, 4, 4);
+            SetUnitStatus("Unit5", 0, 0, 0, 0, 0, 0, 60, 5, 500, 50, 20, 60, 5, 5);
+            SetUnitStatus("Unit6", 0, 0, 0, 0, 0, 0, 100, 6, 600, 60, 30, 70, 6, 6);
+            SetUnitStatus("Unit7", 0, 0, 0, 0, 0, 0, 200, 7, 1000, 70, 40, 80, 7, 7);
+            SetUnitStatus("Unit8", 0, 0, 0, 0, 0, 0, 300, 8, 1000, 80, 50, 90, 8, 8);
+            SetUnitStatus("Unit9", 0, 0, 0, 0, 0, 0, 400, 9, 2000, 90, 60, 100, 9, 9);
 
             PlayerPrefs.SetInt("MyMoney", 1000);
 
@@ -57,28 +84,95 @@ public class GameManager : MonoBehaviour
         }
 
 
-
+        #endregion
 
     }
-    #endregion
 
 
+    [DynamoDBTable("Unit_Info")]
+    public class Unit
+    {
+        [DynamoDBHashKey] // Hash Key
+        public string UnitName { get; set; }
+        [DynamoDBProperty]
+        public int Lock { get; set; }
+        [DynamoDBProperty]
+        public int Hp { get; set; }
+        [DynamoDBProperty]
+        public int Atk { get; set; }
+        [DynamoDBProperty]
+        public int Spd { get; set; }
+        [DynamoDBProperty]
+        public int Dly { get; set; }
+        [DynamoDBProperty]
+        public int Lv { get; set; }
+        [DynamoDBProperty]
+        public int PCost { get; set; }
+        [DynamoDBProperty]
+        public int UCost { get; set; }
+
+    }
+
+    private void CreateUnit()
+    {
+        Unit unit1 = new Unit
+        {
+            UnitName = "Unit10",
+            Lock = 0,
+            Hp = 1,
+            Atk = 2,
+            Spd = 3,
+            Dly = 4,
+            Lv = 5,
+            PCost = 2,
+            UCost = 2
+        };
+
+        context.SaveAsync(unit1, (result) =>
+        {
+            if (result.Exception == null)
+                Debug.Log("Success!");
+            else
+                Debug.Log(result.Exception);
+
+        });
+    }
+
+    public void FindItem()
+    {
+        Unit unit;
+        context.LoadAsync<Unit>("Unit1", (AmazonDynamoDBResult<Unit> AmazonDynamoDBResult) =>
+         {
+             if(AmazonDynamoDBResult.Exception != null)
+             {
+                 Debug.LogException(AmazonDynamoDBResult.Exception);
+                 return;
+             }
+
+             unit = AmazonDynamoDBResult.Result;
+             Debug.Log(unit.UnitName);
+             Debug.Log(unit.Atk);
+             Debug.Log(unit.Hp);
+
+
+         }, null);
+    }
 
     public string FocusUnit = null;
 
     public void SetUnitStatus(string UnitName,
-        int Lock ,
+        int Lock,
         int HP, int ATK, int SPEED, int DELAY,
         int Lv, int PCost, int UCost,
         int MaxHp, int MaxAtk, int MaxSpd, int MaxDly,
-        int UnitDesHeader, int UnitDesContainer )
+        int UnitDesHeader, int UnitDesContainer)
     {
         //게임을 첫 번째로 실행했다면 기본 정보 만들기
         //임시로 유닛3까지만 만듬
         int[] number = new int[14];
 
         number[0] = Lock;
-        number[1] = HP; 
+        number[1] = HP;
         number[2] = ATK;
         number[3] = SPEED;
         number[4] = DELAY;
@@ -131,24 +225,6 @@ public class GameManager : MonoBehaviour
         }
 
         PlayerPrefs.SetString(UnitName, strArr);
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-
-        //유닛들의 기본 정보 가져와서 뿌려주기
-        /*
-
-
-
-
-
-
-
-         */
     }
 
 
